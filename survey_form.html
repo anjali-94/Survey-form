@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>survey-form</title>
+    <style>
+        body{
+            background: linear-gradient(340deg,white,rgb(117, 117, 199));
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 20px;
+        }
+        *{
+           font-family: arial;
+           font-size: 16px;
+        }
+        .heading{
+            margin: 20px;
+        }
+        .heading h1{
+            font-size: 40px;
+        }
+        .heading p{
+            font-size: 16px;
+            margin-top: 0;
+            line-height: 20px;
+
+        }
+        .survey{
+            margin-left: 20px;
+            margin-top: 30px;
+          
+        }
+        .survey div{
+            font-weight: 500;
+        }
+        .survey input{
+            padding: 5px;
+            border-radius: 4px;
+            border: none;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .button{
+            margin-top: 80px;
+            margin-left: 20px;
+            margin-right: 50px;
+            margin-bottom: 200px;
+            height: 35px;
+            width: 90px;
+            border: 1px solid black;
+            background-color: rgb(194, 187, 187);
+        }
+    </style>
+</head>
+<body>
+    <form action="thanks.html" method="get" target="_blank">
+        <header class="heading">
+            <h1>Health Survey</h1>
+            <p>We are pledged to invite you in a 5 minute Health Survey. Our Patient Health Survey include general and non-invasive questions about your health and habits. Answering to all our questions about your health  and habits. Surveys are an excellent approach to acquiring data that isn't revealed by lab results or spoken in casual conversation. Patients can be reluctant to offer you personal feedback, but surveys allow them to do so confidently. Online surveys encourage communication with the patient by collecting opinions from clients and employees.The health assessment of a person plays a significant role in determining and assessing their health status..</p>
+        </header>
+       
+        <main class="survey">
+                <div class="first">
+                    1. First Name: <input type="text" required>
+                    2. Last Name: <input type="text">
+                </div>
+
+                <div>
+                    <p>3. What is your gender?</p>
+            <input type="radio" name="gender" id="Male" required>
+            <label for="Male">Male</label> 
+            <br>
+            <input type="radio" name="gender" id="Female" required>
+            <label for="Female">Female</label>
+
+                </div>
+            <div>
+                <p>4. Date-of-Birth</p>
+                <input type="date" required>
+            </div>
+
+            <div>
+                <p>5. How healthy do you feel on a scale of 1 to 10?</p>
+                <label for="check">
+                1 <input type="radio" name="survey" id="check" required>
+                2 <input type="radio" name="survey" id="check" required>
+                3 <input type="radio" name="survey" id="check" required>
+                4 <input type="radio" name="survey" id="check" required>
+                5 <input type="radio" name="survey" id="check" required>
+                6 <input type="radio" name="survey" id="check" required>
+                7 <input type="radio" name="survey" id="check" required>
+                8 <input type="radio" name="survey" id="check" required>
+                9 <input type="radio" name="survey" id="check" required>
+                10 <input type="radio" name="survey" id="check" required>
+            </label>
+            </div>
+
+            <div>
+                <p>6. What is your height?</p>
+                <input type="text" required>
+                <p>7. What is your weight?</p>
+                <input type="text" required>
+            </div>
+            <div>
+                <p>8. Have you ever smoked</p>
+                <input type="radio" name="smoke" id="Yes" required>
+                <label for="Yes">Yes</label> 
+                <br>
+                <input type="radio" name="smoke" id="No" required>
+                <label for="NO">No</label>
+            </div>
+            <div>
+                9. How often do you go for your health checkup?
+                <select name="options" id="">
+                    <option value="">Choose</option>
+                    <option>Once in a week</option>
+                    <option>Once in a month</option>
+                    <option>Once in every three months</option>
+                    <option>Once in a year</option> 
+                    <option> only when needed</option>   
+                </select>
+                <div>
+                    <input type="text" placeholder="Other (Please write your answer)">
+                </div>  
+            </div> 
+                <div>
+                    <p> 10. Do you have any chronic disease</p>
+                    <input type="radio" name="any_disease" id="Yes" required>
+                    <label for="Yes">Yes</label> 
+                    <br>
+                    <input type="radio" name="any_disease" id="No" required>
+                    <label for="NO">No</label>
+                </div>
+            
+                <div>
+                    11. Do you have any genetic diseases?
+                    <select name="genetic_disease" required>
+                        <option value="">Choose</option>
+                        <option>Diabetes</option>
+                        <option>High blood pressure</option>
+                        <option>Huntington</option>
+                        <option>Hemophilia</option> 
+                        <option>No</option> 
+                    </select>
+                    <div>
+                        <input type="text" placeholder="Other (Please write your answer)">
+                    </div> 
+                </div>  
+            
+                <div>
+                    <p>12. How often do you exercise?</p>
+                    <select name="exercise" required>
+                        <option value="">Choose</option>
+                        <option>Every day</option>
+                        <option>Once in two days</option>
+                        <option>Once a week</option>
+                        <option>Once a month</option> 
+                        <option>Never</option>
+                    </select>
+                </div>  
+                <div>
+                    <p>13. Do you regularly practice the following exercises ?</p>
+                    <input type="radio" name="exercise" id="walking">
+                    <label for="walking">Walking</label> 
+                    <br>
+                    <input type="radio" name="exercise" id="running">
+                    <label for="running">Running</label> 
+                    <br>
+                    <input type="radio" name="exercise" id="swimming">
+                    <label for="swimming">Swimming</label> 
+                    <br>
+                    <input type="radio" name="exercise" id="cycling">
+                    <label for="cycling">Cycling</label> 
+                    <br>
+                    <input type="radio" name="exercise" id="other">
+                    <label for="other">Other</label> 
+                    <br>
+                    <input type="radio" name="exercise" id="none">
+                    <label for="none">i don't Exercise</label> 
+                </div>
+    
+                <div>
+                    <p>14. How many steps do you cover in a day?</p>
+                    <input type="text" name="walk_time" required>
+                </div>
+                <div>
+                    <p>15. How many hours do you usually sleep?</p>
+                    <input type="text" name="sleep_hours" required>
+                </div>
+                <div>
+                    <p>16. How was the doctor's attitude towards you on a scale of 1 to 10?</p>
+                    <label for="check">
+                    1 <input type="radio" name="doctor_attitude" id="check" required>
+                    2 <input type="radio" name="doctor_attitude" id="check" required>
+                    3 <input type="radio" name="doctor_attitude" id="check" required>
+                    4 <input type="radio" name="doctor_attitude" id="check" required>
+                    5 <input type="radio" name="doctor_attitude" id="check" required>
+                    6 <input type="radio" name="doctor_attitude" id="check" required>
+                    7 <input type="radio" name="doctor_attitude" id="check" required>
+                    8 <input type="radio" name="doctor_attitude" id="check" required>
+                    9 <input type="radio" name="doctor_attitude" id="check" required>
+                    10 <input type="radio" name="doctor_attitude" id="check" required>
+                </label>
+                </div>
+                <div>
+                    <p>17. Do you use any medication regularly?</p>
+                    <input type="radio" name="medication" id="Yes" required>
+                    <label for="Yes">Yes</label> 
+                    <br>
+                    <input type="radio" name="medication" id="No" required>
+                    <label for="NO">No</label>
+                </div>
+                <div>
+                    <p>18. What various medications you take?</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>19. When was the last time you were sick?</p>
+                    <input type="text" required>
+                </div>
+                <div>
+                    <p>20. How do you rate the local hospitals in your area?</p>
+                    <select name="rate_hospitals">
+                        <option value="">Choose</option>
+                        <option>Excellent</option>
+                        <option>Good</option>
+                        <option>Average</option>
+                        <option>Poor</option> 
+                    </select>
+                </div>  
+        </main>
+        <footer>
+            <div class="container">
+                <input  class="button" type="submit" value="Subimt">
+                <input class="button" type="reset" value="Reset">
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
